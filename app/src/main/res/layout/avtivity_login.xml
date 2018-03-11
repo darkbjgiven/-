@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/login_picture1">
 
-
+    <!--做一个登录界面，点击登陆按钮后可以调到主页面-->
     <Button
         android:id="@+id/login_button1"
         android:layout_width="wrap_content"
