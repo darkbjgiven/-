@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">知者</string>
+    <string name="title_home">主页</string>
+    <string name="title_forum">论坛</string>
+    <string name="title_mine">我的</string>
+    <string name="app_back">返回</string>
+    <string name="login_account">账户:</string>
+    <string name="login_password">密码:</string>
+    <string name="login_log">登陆</string>
+    <string name="login_register">注册</string>
+    <string name="login_please1">请输入账户</string>
+    <string name="login_please2">请输入密码</string>
+</resources>
