@@ -5,12 +5,18 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 //构建MainActivity主活动类，继承自AppCompatActivity。
 public class MainActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
+
+    //private List<home_news> newsList =new ArrayList<>();
 
     //使用BottomNavigationView实现底部导航栏。
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -21,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
                     mTextMessage.setText(R.string.title_home);
+
                     return true;
                 case R.id.navigation_dashboard:
                     mTextMessage.setText(R.string.title_forum);
@@ -45,6 +52,25 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         //设置监听回调方法。即运行后返回已执行。
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+        /**
+        inithomenews();
+        home_news_adapter adapter =new home_news_adapter(MainActivity.this,
+                R.layout.activity_main_home,newsList);
+        ListView listView =(ListView) findViewById(R.id.list_view);
+        listView.setAdapter(adapter);
+         */
+
     }
+
+    /**
+    private void inithomenews(){
+        for (int i=0;i<20;i++){
+            home_news news1 =new home_news("newsA",R.drawable.login_picture1);
+            newsList.add(news1);
+        }
+
+    }
+     */
 
 }
